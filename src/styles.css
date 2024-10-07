@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  src: url("./assets/Montserrat-VariableFont_wght.ttf") format("opentype");
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-white;
+    font-family: "Montserrat", Helvetica, sans-serif;
+  }
+
+  path {
+    vector-effect: non-scaling-stroke;
+  }
+
+  .svg-wrapper svg {
+    @apply w-full h-full;
+  }
+}
